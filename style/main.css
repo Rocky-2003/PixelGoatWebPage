@@ -1,42 +1,23 @@
-/*
---- 01 TYPOGRAPHY SYSTEM
+@import url(https://db.onlinewebfonts.com/c/42441faa9c7c255068f6dd0c33ca2ba5?family=SofiaPro-SemiBold);
 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+/* working on header */
+.header {
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f7f3;
+}
 
-- Font weights
+.header img {
+  width: 9rem;
+}
 
-
-- Line heights
-
-- Letter spacing
-
-
---- 02 COLORS
--BackGround-color: #F9F7F3
-- Tints:
-- Primary: #FE5515 #1a1a17
-- Shades: 
-#323131
-
-
-- Accents:
-- Greys
-#7e7c73
+.header-nav a {
+  padding-right: 2rem;
+  font-family: SofiaPro-SemiBold, sans-serif;
+  font-size: 1.6rem;
+  color: #1a1a17;
+}
 
 
-
---- 05 SHADOWS
-
-
---- 06 BORDER-RADIUS
-12px 
-6px
-
-
---- 07 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
