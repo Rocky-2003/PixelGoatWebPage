@@ -9,6 +9,10 @@
 
 
 - Line heights
+DEFAULT: 1
+BIG fONT: 1.1
+MEDIUM: 1.5
+
 
 - Letter spacing
 
@@ -63,20 +67,25 @@ body {
   /* font-weight: 400; */
   color: #555;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* COMMON CSS */
+
+.flex{
+  display: flex;
+  align-items: center;
 }
 
 .container {
-  padding: 60px 24px;
-}
-
-a {
-  text-decoration: none;
+  padding: 6rem 2rem;
 }
 
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 16px 24px;
+  padding: 1.4rem 2.8rem;
+  box-shadow: rgba(26, 26, 23, 0.2) 0px 4px 8px 0px;
   font-size: 1.6rem;
   color: #f9f7f3;
   border: none;
@@ -87,6 +96,42 @@ a {
 
 .btn:hover,
 .btn:active {
-  background-color: #31312e;
+  background-color: #484845;
   transition: all 1s;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  display: inline-block;
+  padding: 1.4rem 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1a1a17;
+  color: #1a1a17;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 6.4rem;
+  color: #1a1a17;
+  line-height: 1.1;
+  letter-spacing: normal;
+  font-weight: bolder;
+}
+
+h1 span {
+  color: #fe5515;
+}
+
+.primary-paragraph {
+  font-size: 2.4rem;
+  color: #7e7c73;
+  font-weight: lighter;
+  line-height: 1.5;
 }
