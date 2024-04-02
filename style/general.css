@@ -1,7 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/42441faa9c7c255068f6dd0c33ca2ba5?family=SofiaPro-SemiBold);
 @import url(https://db.onlinewebfonts.com/c/052579a2b150394c09586dcc982f9548?family=SofiaPro-Medium);
 @import url(https://db.onlinewebfonts.com/c/1572b251b0319fdd12219a000aad6196?family=SofiaPro-Black);
-
+@import url(https://db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=SofiaPro-Bold);
 
 /*
 --- 01 TYPOGRAPHY SYSTEM
@@ -14,8 +14,9 @@
 
 - Line heights
 DEFAULT: 1
-BIG fONT: 1.1
 MEDIUM: 1.5
+MEDIUM: 1.3
+BIG fONT: 1.1
 
 
 - Letter spacing
@@ -31,9 +32,9 @@ MEDIUM: 1.5
 
 - Accents:
 - Greys
-#7e7c73
-#7e7c73
-
+#8b8981
+#a4a196
+#d0d0d0
 
 
 
@@ -82,6 +83,23 @@ body {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-gap1 {
+  gap: 1rem;
+}
+
+.inline_block {
+  display: inline-block;
+  width: 60%;
+}
+
+.center {
+  text-align: center;
 }
 
 .container {
@@ -135,9 +153,36 @@ h1 span {
   color: #fe5515;
 }
 
+.secondary-heading {
+  font-size: 4rem;
+  font-family: "SofiaPro-Black", sans-serif;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #1a1a17;
+}
+
+.small-heading {
+  font-family: "SofiaPro-medium", sans-serif;
+  font-size: 1.4rem;
+  color: #a4a196;
+  margin-bottom: 4rem;
+  line-height: 1.3;
+}
+
 .primary-paragraph {
   font-size: 2.4rem;
-  color: #7e7c73;
+  color: #8b8981;
+  font-family: "SofiaPro-Medium", sans-serif;
   font-weight: lighter;
   line-height: 1.5;
+}
+
+.secondary-paragraph {
+  font-size: 1.8rem;
+  font-family: "SofiaPro-Medium";
+  line-height: 1.3;
+}
+
+.position-realtive {
+  position: relative;
 }

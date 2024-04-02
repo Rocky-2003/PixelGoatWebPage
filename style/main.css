@@ -1,6 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/42441faa9c7c255068f6dd0c33ca2ba5?family=SofiaPro-SemiBold);
 @import url(https://db.onlinewebfonts.com/c/1572b251b0319fdd12219a000aad6196?family=SofiaPro-Black);
 @import url(https://db.onlinewebfonts.com/c/052579a2b150394c09586dcc982f9548?family=SofiaPro-Medium);
+@import url(https://db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=SofiaPro-Bold);
 
 /* ************************* */
 /* WORKING ON HEADER*/
@@ -13,6 +14,7 @@
   position: fixed;
   align-items: center;
   width: 100%;
+  z-index: 99;
   height: 9rem;
 }
 
@@ -84,13 +86,6 @@
   padding: 0 2.4rem 6.4rem 2.4rem;
 }
 
-.brand-header {
-  font-family: "SofiaPro-medium", sans-serif;
-  font-size: 1.4rem;
-  color: #7e7c73;
-  margin-bottom: 4rem;
-}
-
 .logos {
   display: flex;
   justify-content: space-between;
@@ -109,4 +104,77 @@
 .brands-logo:nth-child(3),
 .brands-logo:nth-child(4) {
   height: 2.4rem;
+}
+
+/* ************************ */
+/* FEATURES SECTION */
+/* ************************ */
+
+.features-section {
+  /* padding: 9rem 2.4rem; */
+  padding: 4rem 2.4rem;
+  background-color: #f9f7f3;
+}
+
+.features-logo {
+  height: 13rem;
+  width: 13rem;
+}
+
+.features-heading {
+  margin-bottom: 2rem;
+}
+
+.features-design {
+  display: grid;
+  margin: 6rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.features-design img {
+  width: 100%;
+  border: 0.5px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.features-design-text {
+  position: absolute;
+  padding: 2rem 3rem;
+}
+
+.features-design-text img {
+  border: none;
+  height: 4.5rem;
+  width: 15rem;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.inline_block .features-btn {
+  color: #1a1a17 !important;
+  display: inline-block;
+  margin: 1rem 1rem 0 0 !important;
+  background-color: #f2f0e9;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+}
+
+.features-btn {
+  color: #1a1a17 !important;
+  margin-top: 7rem !important;
+  background-color: #f2f0e9;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+}
+
+.features-bottom-text {
+  display: inline-block;
+  color: #1a1a17;
+  font-family: "SofiaPro-Bold", sans-serif;
+  font-weight: bolder;
+  border-radius: 50px;
+  border: 0.5px solid #d0d0d0;
+  padding: 1rem 2rem;
+  margin: 0 1.5rem 2rem 0;
 }
