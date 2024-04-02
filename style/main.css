@@ -1,4 +1,6 @@
 @import url(https://db.onlinewebfonts.com/c/42441faa9c7c255068f6dd0c33ca2ba5?family=SofiaPro-SemiBold);
+@import url(https://db.onlinewebfonts.com/c/1572b251b0319fdd12219a000aad6196?family=SofiaPro-Black);
+@import url(https://db.onlinewebfonts.com/c/052579a2b150394c09586dcc982f9548?family=SofiaPro-Medium);
 
 /* ************************* */
 /* WORKING ON HEADER*/
@@ -34,7 +36,7 @@
 /* ************************ */
 
 .hero-section {
-  padding: 16rem 2.4rem;
+  padding: 16rem 2.4rem 10rem 2.4rem;
   background-color: #f9f7f3;
 }
 
@@ -49,6 +51,7 @@
 
 .hero-h1 {
   margin-top: 8rem;
+  font-family: "SofiaPro-Black", sans-serif;
 }
 
 .hero-para {
@@ -69,4 +72,41 @@
   height: 1.3rem;
   width: 1.3rem;
   margin: 0.1rem 1rem 0 0;
+}
+
+/* ****************************/
+/* BRAND SECTON */
+/* *************************** */
+
+.brand-section {
+  background-color: #f9f7f3;
+  text-align: center;
+  padding: 0 2.4rem 6.4rem 2.4rem;
+}
+
+.brand-header {
+  font-family: "SofiaPro-medium", sans-serif;
+  font-size: 1.4rem;
+  color: #7e7c73;
+  margin-bottom: 4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brands-logo {
+  filter: brightness(0);
+  opacity: 30%;
+}
+
+.brands-logo {
+  height: 2.8rem;
+}
+
+.brands-logo:nth-child(3),
+.brands-logo:nth-child(4) {
+  height: 2.4rem;
 }
