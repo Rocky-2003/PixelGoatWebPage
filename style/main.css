@@ -121,10 +121,6 @@
   width: 13rem;
 }
 
-.features-heading {
-  margin-bottom: 2rem;
-}
-
 .features-design {
   display: grid;
   margin: 6rem 0;
@@ -170,11 +166,244 @@
 
 .features-bottom-text {
   display: inline-block;
-  color: #1a1a17;
+  color: #1a1a17 !important;
   font-family: "SofiaPro-Bold", sans-serif;
   font-weight: bolder;
   border-radius: 50px;
   border: 0.5px solid #d0d0d0;
   padding: 1rem 2rem;
   margin: 0 1.5rem 2rem 0;
+}
+
+/* ********************* */
+/* QUALITY SECTION */
+/* ********************* */
+
+.quality-grid {
+  margin: 7rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.quality-grid-item {
+  padding: 2.4rem;
+  background-color: #f9f7f3;
+  border-radius: 12px;
+}
+
+.quality-icon {
+  padding: 1rem;
+  background-color: #ff51171a;
+  border-radius: 6px;
+  margin-bottom: 1.6rem;
+}
+
+.quality-paragraph {
+  color: #1a1a17 !important;
+  font-family: "SofiaPro-Bold" !important;
+  /* margin-bottom: 0.5rem; */
+}
+
+.line {
+  color: #1a1a17;
+  margin-bottom: 6rem;
+}
+
+.quality-bottom {
+  display: grid;
+  grid-template-columns: 35fr 65fr;
+  gap: 6rem;
+}
+
+.how_it_work_heading {
+  margin: 0 !important;
+}
+
+.how_it_work {
+  margin: 0 0 3rem 0;
+}
+
+.multiply-list {
+  margin-bottom: 2rem;
+}
+
+.multiply-list p {
+  color: #1a1a17;
+}
+
+.multiply-sign {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.quality-how-icon {
+  display: inline-block;
+  padding: 0.3rem 1.5rem 0.3rem;
+  color: #fe5515 !important;
+}
+
+/* ***************************** */
+/* PRICING SECTION */
+/* ***************************** */
+.pricing-section {
+  background-color: #f9f7f3;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: 35fr 35fr 30fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  box-shadow: rgb(235, 231, 223) 0px 2px 4px 0px;
+  background-color: #fff;
+  border: 0.5px solid #7e7c7366;
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all 0.3s;
+}
+
+.pricing-card:hover {
+  box-shadow: none;
+}
+
+.grid_height_auto {
+  height: 16rem;
+}
+
+.grid_height_auto::after {
+  content: "The team is based in beautiful Seattle, WA.";
+  font-size: 1.6rem;
+  font-family: "SofiaPro-Medium", sans-serif;
+  color: #7e7c73;
+  bottom: -4.5rem;
+  left: 0;
+  position: absolute;
+}
+
+.spots {
+  color: #fe5515;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50rem;
+  font-family: "SofiaPro-SemiBold", sans-serif;
+  background-color: #f9f7f3;
+}
+
+.pricing-paraColor1 {
+  color: #48c953;
+  margin-bottom: 1rem;
+}
+
+.pricing-paraColor2 {
+  color: #835ff6;
+  margin-bottom: 1rem;
+}
+
+.pricing-paraFont {
+  font-family: "SofiaPro-Black", sans-serif !important;
+  color: #2f2f2c !important;
+  margin-bottom: 2rem;
+}
+
+.line2 {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.pricing-paraFont2 {
+  font-family: "SofiaPro-Bold", sans-serif !important;
+  color: #7e7c73 !important;
+}
+
+.pricing-end {
+  background-color: #f2f0e9;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 7rem;
+}
+
+/* *************************** */
+/* QNA SECTION */
+/* *************************** */
+
+.qna-grid {
+  display: grid;
+  grid-template-columns: 64fr 36fr;
+  gap: 6rem;
+}
+
+.color-way1 {
+  color: #1a1a17 !important;
+  font-family: "SofiaPro-Bold", sans-serif !important;
+}
+
+.qna-btn a {
+  color: #1a1a17 !important;
+  font-family: "SofiaPro-Black", sans-serif !important;
+}
+
+.qna-btn {
+  padding: 1.5rem 2rem !important;
+  margin-top: 1rem;
+}
+
+.video {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 12px;
+}
+
+/* *********************** */
+/* FOOTER */
+/* **************************** */
+.footer {
+  padding: 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a17;
+  color: #fff !important;
+  align-items: center;
+}
+
+.footer img {
+  width: 11rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.footer-nav a {
+  font-size: 1.6rem;
+  color: #f9f7f3;
+  transition: all 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #d0d0d0;
+}
+
+#btn2:link,
+#btn2:visited {
+  display: inline-block;
+  padding: 1.4rem 2.8rem;
+  box-shadow: rgba(26, 26, 23, 0.2) 0px 4px 8px 0px;
+  font-size: 1.6rem;
+  color: #1a1a17;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #f9f7f3;
+}
+
+#btn2:hover,
+#btn2:active {
+  background-color: #d0d0d0;
+  transition: all 0.3s;
 }

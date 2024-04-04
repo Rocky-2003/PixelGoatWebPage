@@ -24,18 +24,15 @@ BIG fONT: 1.1
 
 --- 02 COLORS
 -BackGround-color: #F9F7F3
-- Tints:
+- Tints:#ff51171a #F2F0E9
 - Primary: #FE5515 #1a1a17
-- Shades: 
-#323131
+- Shades: #323131
 
 
 - Accents:
 - Greys
-#8b8981
-#a4a196
+#7e7c73
 #d0d0d0
-
 
 
 
@@ -65,15 +62,14 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
 body {
   font-family: SofiaPro-SemiBold, sans-serif;
   line-height: 1;
-  /* font-weight: 400; */
-  color: #555;
+
   overflow-x: hidden;
   position: relative;
 }
@@ -85,12 +81,29 @@ body {
   align-items: center;
 }
 
+.flex-colom {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-between {
   justify-content: space-between;
 }
 
 .flex-gap1 {
   gap: 1rem;
+}
+
+.flex-gap2 {
+  gap: 2.5rem;
+}
+
+.flex-gap3 {
+  gap: 5.5rem;
+}
+
+.flex-gap6 {
+  gap: 9rem;
 }
 
 .inline_block {
@@ -138,6 +151,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #1a1a17;
 }
 
 h1 {
@@ -149,11 +163,12 @@ h1 {
   font-weight: bolder;
 }
 
-h1 span {
+.color-orange {
   color: #fe5515;
 }
 
 .secondary-heading {
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-family: "SofiaPro-Black", sans-serif;
   line-height: 1.1;
@@ -161,17 +176,26 @@ h1 span {
   color: #1a1a17;
 }
 
+.tertary-heading {
+  font-size: 2.3rem;
+  font-family: "SofiaPro-Black", sans-serif;
+  letter-spacing: normal;
+  /* font-weight: 400 !important; */
+}
+
 .small-heading {
   font-family: "SofiaPro-medium", sans-serif;
   font-size: 1.4rem;
-  color: #a4a196;
+
+  color: #7e7c73;
   margin-bottom: 4rem;
   line-height: 1.3;
 }
 
 .primary-paragraph {
   font-size: 2.4rem;
-  color: #8b8981;
+
+  color: #7e7c73;
   font-family: "SofiaPro-Medium", sans-serif;
   font-weight: lighter;
   line-height: 1.5;
@@ -181,8 +205,39 @@ h1 span {
   font-size: 1.8rem;
   font-family: "SofiaPro-Medium";
   line-height: 1.3;
+  color: #7e7c73;
+}
+
+.tertary-paragraph {
+  font-size: 2rem;
+  font-family: "SofiaPro-Medium";
+  line-height: 1.3;
+  color: #7e7c73;
+}
+
+.fourth-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  font-family: "SofiaPro-Medium";
+  color: #7e7c73;
 }
 
 .position-realtive {
   position: relative;
+}
+
+.margin-bottom1 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom4 {
+  margin-bottom: 4rem;
+}
+
+.margin-top2 {
+  margin-top: 1rem;
 }
