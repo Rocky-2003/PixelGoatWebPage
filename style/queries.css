@@ -1,0 +1,157 @@
+/* In media queries we dont use rem because of conflict in some browsers so, we use em and 1rem = 1em = 16px  */
+
+/**************************/
+/* BELOW 1344PX (SMALLER DESKTOPS) 1344px/16px=84em   */
+/**************************/
+@media (max-width: 84em) {
+}
+
+/* /**************************/
+/* BELOW 1200PX (For LandScape Tablets)  */
+/***************************/
+
+@media (max-width: 76rem) {
+  html {
+    font-size: 56%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .features-btn {
+    display: none;
+  }
+
+  .absolute {
+    /* font-size: 1.6rem; */
+    width: 99%;
+    /* margin: 0; */
+  }
+
+  .inline_block {
+    display: none;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 8rem;
+  }
+
+  .qna-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 944PX (For Tablets)  */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  .pricing-cards {
+    margin: 0;
+  }
+
+  .grid-center {
+    text-align: center;
+    display: grid;
+  }
+}
+
+/**************************/
+/* BELOW 700PX (For smaller Tablets)  */
+/**************************/
+@media (max-width: 44em) {
+  .hero{
+    grid-template-columns: 1fr;
+  }
+
+  .hero img{
+    width: 95%;
+  }
+
+  .last-logo{
+    display: none ;
+  }
+  
+  .features-logo{
+    display: none;
+  }
+
+  .features-design{
+    grid-template-columns: 1fr;
+  }
+
+  
+  .absolute {
+    font-size: 1.6rem;
+    width: 100%;
+    /* margin: 0; */
+  }
+
+  .features-btn{
+    display: block;
+  }
+
+  
+  .inline_block {
+    display: none;
+  }
+
+  
+  .inline_block {
+    display: block;
+  }
+
+  .add-to{
+    /* text-align: center; */
+    padding: 0 8rem;
+  }
+
+  .quality-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .primary-paragraph{
+font-size: 2.6re,;
+  }
+  .secondary-paragraph{
+    font-size: 2rem;
+
+  }
+
+
+  .quality-bottom{
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-cards{
+    grid-template-columns: 1fr;
+    margin-right: 10rem;
+  }
+
+  .grid-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer-nav a{
+    font-size: 2rem;
+  }
+
+  #btn2{
+font-size: 2rem;
+  }
+}
