@@ -1,28 +1,15 @@
 "use strict";
 import Dialog from "./dialog.js";
+import HideMenu from "./menu.js";
+import StickyHeader from "./stickyMenu.js";
 
-const heroSection = document.querySelector(".brand-section");
-const header = document.querySelector(".header");
 // console.log(heroSection);
 
 // this function call is for work of dialog open and close module
 Dialog();
 
-const options = {
-  root: null,
-  threshold: 0.1,
-};
+// this function will add the functionality to hide or unhide the menu on small screen
+HideMenu();
 
-function callBackFunction(entries) {
-  console.log("hello");
-
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      header.classList.add("header-box");
-      console.log(entry);
-    }
-  });
-}
-
-const obeserver = new IntersectionObserver(callBackFunction, options);
-obeserver.observe(heroSection);
+// this function will add the functionality to the header to become fixed when we scroll
+StickyHeader();

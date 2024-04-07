@@ -76,6 +76,8 @@ body {
 
 /* COMMON CSS */
 
+
+
 .flex {
   display: flex;
   align-items: center;
@@ -84,6 +86,10 @@ body {
 .flex-colom {
   display: flex;
   flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-between {
@@ -235,6 +241,8 @@ h1 {
 .position-realtive {
   position: relative;
 }
+
+
 
 .margin-bottom1 {
   margin-bottom: 1rem;

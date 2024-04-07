@@ -8,8 +8,10 @@
 /* ************************* */
 .header {
   padding: 24px 24px;
-  display: flex;
-  justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+
   background-color: #f9f7f3;
   position: fixed;
   align-items: center;
@@ -35,6 +37,48 @@
 .header-nav a {
   font-size: 1.6rem;
   color: #1a1a17;
+}
+
+.menu-btn {
+  display: none;
+  width: 6rem !important;
+  color: #1a1a17 !important;
+  padding: 1rem;
+}
+
+
+.menu-btn-click {
+  background-color: #f2f0e9;
+  /* animation: flash 0.3s; */
+  border-radius: 6px;
+}
+
+.hide{
+  display: none;
+}
+
+.header-resp{
+  display: none;
+}
+
+.resp-brand-logo{
+  width: 5rem !important;
+}
+
+.line3{
+  display: none;
+}
+
+.position-absolute{
+display: flex;
+flex-direction: row !important;
+}
+
+.display-flex{
+  display: flex !important;
+}
+.display-none{
+  display: none !important;
 }
 
 /* *************************** */
@@ -113,7 +157,6 @@
   height: 2.4rem;
 }
 
-
 /* ************************ */
 /* FEATURES SECTION */
 /* ************************ */
@@ -183,33 +226,31 @@
   margin: 0 1.5rem 2rem 0;
 }
 
-
-
 .myDialog {
   width: 96.5%;
   overflow: hidden;
-  position: absolute;
+  
   border: none;
   border-radius: 12px;
   margin: 2.4rem;
 
   overflow-y: hidden;
   z-index: 1000;
-  top: 105rem;
+  /* top: 105rem; */
   text-align: center;
   padding: 9rem 2.4rem;
   background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px; */
   animation: fade-slide-in-from-top 0.3s ease-in-out;
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.7); 
 }
 
-.myDialog::backdrop {
-  /* Corrected from .myDialog::backdrop */
-  background-color: rgba(0, 0, 0, 0.1);
+.myDialog:focus {
+outline: none;
 }
-/* form .btn-dialog {
-  position: relative;
-} */
+
+
+
 
 .btn-dialog {
   border: none;
@@ -218,8 +259,12 @@
   position: absolute;
   top: -4rem;
   background-color: transparent !important;
-  right: 4rem;
+  right: 2rem;
   transition: all 0.3s;
+}
+
+.btn-dialog:focus{
+  outline: none;
 }
 
 .btn-dialog:hover {
@@ -282,7 +327,6 @@
   margin-top: 6rem;
   cursor: pointer;
 }
-
 
 /* ********************* */
 /* QUALITY SECTION */
