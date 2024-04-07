@@ -73,7 +73,7 @@ body {
 
 
 .flex {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 
@@ -81,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
