@@ -241,8 +241,7 @@ display: none;
   text-align: center;
   padding: 9rem 2.4rem;
   background: #fff;
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px; */
-  animation: fade-slide-in-from-top 0.3s ease-in-out;
+  transition: all 5s ease-in;
   box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.7); 
 }
 

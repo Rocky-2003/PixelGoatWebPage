@@ -240,6 +240,15 @@
 /**************************/
 
 @media (max-width: 34em) {
+
+  .hero-h1{
+    font-size: 4rem !important
+    
+  }
+
+  br{
+    display: none;
+  }
   .logos {
     display: grid;
     grid-template-columns: 1fr 1fr;
