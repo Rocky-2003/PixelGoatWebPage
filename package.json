@@ -1,0 +1,17 @@
+{
+  "name": "piexel-goat",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html -d dist",
+    "build": "parcel build index.html -d dist --no-minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "parcel-bundler": "^1.12.5"
+  }
+}
