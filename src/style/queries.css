@@ -133,10 +133,7 @@
     display: block;
   }
 
-  .add-to {
-    /* text-align: center; */
-    padding: 0 8rem;
-  }
+ 
 
   .quality-grid {
     grid-template-columns: 1fr;
