@@ -49,9 +49,10 @@
 }
 
 
-.menu-btn-click {
-  background-color: #f2f0e9;
-  /* animation: flash 0.3s; */
+
+
+.menu-btn:hover {
+  background-color: #eae8e4;
   border-radius: 6px;
 }
 
